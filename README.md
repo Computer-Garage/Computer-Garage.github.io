@@ -2,10 +2,9 @@
 - 👀 I’m interested in frontend designing
 - 🌱 I’m currently learning backend
 - 
-- About me : https://computer-garage.github.io/page/
-- 
 - This is maily created for my youtube channel
 - Explaining in better way in language tamil.
+- Providing easy and simplified explanation.
 
 <!---
 Computer-Garage/Computer-Garage is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
