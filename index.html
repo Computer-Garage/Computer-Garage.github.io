@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Garage</title>
+    <link rel="logo.png" href="./logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Computer Garage</h1>
+        </div>
+    </header>
+    <ul style="padding: 0;">
+        <li><a href="https://www.youtube.com/channel/UClSnmzVCqTpbgGFY-dAdlsg"><i class="fa fa-youtube-play icon"><br>Youtube</i></a></li>
+        <li><a href="https://www.instagram.com/computergarage__/"><i class="fa fa-instagram icon"><br>Instagram</i></a></li>
+        <li><a href="https://github.com/computer-garage"><i class="fa fa-github icon"><br>Github</i></a></li>
+    </ul>
+</body>
+
+<style>
+    body {
+        user-select: none;
+        background: royalblue;
+        margin: 0;
+    }
+
+    .container {
+        overflow: hidden;
+        text-align: center;
+        background: darkred;
+        color: white;
+    }
+
+    .container h1 {
+        text-shadow: 5px 5px black;
+    }
+
+    ul li {
+        list-style: none;
+        margin: 2%;
+    }
+
+    ul li a {
+        text-align: center;
+        padding: 1%;
+        font-size: 40px;
+        display: block;
+    }
+
+    ul li a .icon {
+        position: relative;
+        color: white;
+        transition: 1s;
+        border-radius: 20px;
+        width: 100%;
+        padding: 1% 0;
+        box-shadow: 5px 8px 8px 5px #111;
+    }
+
+    ul li:nth-child(1) a:hover .icon {
+        background: red;
+        transform: rotateX(360deg);
+    }
+
+    ul li:nth-child(2) a:hover .icon {
+        background: linear-gradient(200deg, #f702ff, #ffa805);
+        transform: rotateX(360deg);
+    }
+
+    ul li:nth-child(3) a:hover .icon {
+        background: black;
+        transform: rotateX(360deg);
+    }
+
+    ul li a:before {
+        position: absolute;
+        background: #f00;
+    }
+</style>
+
+</html>
