@@ -1,86 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computer Garage</title>
-    <link rel="logo.png" href="./logo.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: firebrick;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+        h1 {
+            margin: 0;
+        }
+        .logo {
+            max-width: 200px;
+            margin-bottom: 10px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-link {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .profile-link a {
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            margin: 0 10px;
+            transition: color 0.3s ease; 
+        }
+
+        .profile-link a:hover {
+            color: firebrick; 
+        }
+        
+        .fa-icon {
+            font-size: 24px;
+            margin-right: 5px;
+        }
+        
+        .content {
+            text-align: center;
+        }
+        
+        iframe {
+            width: 100%;
+            max-width: 640px;
+            height: 360px;
+            margin: 20px auto;
+            display: block;
+        }
+        
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            iframe {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <header class="header">
-        <div class="container">
-            <h1>Computer Garage</h1>
-        </div>
+    <header>
+        <img src="./logo.png" alt="Computer Garage Logo" class="logo">
+        <h1>Computer Garage</h1>
     </header>
-    <ul style="padding: 0;">
-        <li><a href="https://www.youtube.com/channel/UClSnmzVCqTpbgGFY-dAdlsg"><i class="fa fa-youtube-play icon"><br>Youtube</i></a></li>
-        <li><a href="https://www.instagram.com/computergarage__/"><i class="fa fa-instagram icon"><br>Instagram</i></a></li>
-        <li><a href="https://github.com/computer-garage"><i class="fa fa-github icon"><br>Github</i></a></li>
-    </ul>
+    <div class="container">
+        <h2>About Me</h2>
+        <div class="content">
+            <p>Welcome to Computer Garage! I'm passionate about technology, and I share my knowledge and projects on my YouTube channel and GitHub profile. Check them out below:</p>
+        </div>
+
+        <h2>YouTube Channel</h2>
+        <div class="profile-link">
+            <a href="https://www.youtube.com/@computergarage3569/videos" target="_blank">
+                <i class="fab fa-youtube fa-icon"></i> Visit My YouTube Channel
+            </a>
+        </div>
+
+        <h2>GitHub</h2>
+        <div class="profile-link">
+            <a href="https://github.com/computer-garage" target="_blank">
+                <i class="fab fa-github fa-icon"></i> Visit My GitHub Profile
+            </a>
+        </div>
+
+        <h2>YouTube Intro</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/your-video-id" frameborder="0" allowfullscreen></iframe>
+    </div>
 </body>
-
-<style>
-    body {
-        user-select: none;
-        background: royalblue;
-        margin: 0;
-    }
-
-    .container {
-        overflow: hidden;
-        text-align: center;
-        background: darkred;
-        color: white;
-    }
-
-    .container h1 {
-        text-shadow: 5px 5px black;
-    }
-
-    ul li {
-        list-style: none;
-        margin: 2%;
-    }
-
-    ul li a {
-        text-align: center;
-        padding: 1%;
-        font-size: 40px;
-        display: block;
-    }
-
-    ul li a .icon {
-        position: relative;
-        color: white;
-        transition: 1s;
-        border-radius: 20px;
-        width: 100%;
-        padding: 1% 0;
-        box-shadow: 5px 8px 8px 5px #111;
-    }
-
-    ul li:nth-child(1) a:hover .icon {
-        background: red;
-        transform: rotateX(360deg);
-    }
-
-    ul li:nth-child(2) a:hover .icon {
-        background: linear-gradient(200deg, #f702ff, #ffa805);
-        transform: rotateX(360deg);
-    }
-
-    ul li:nth-child(3) a:hover .icon {
-        background: black;
-        transform: rotateX(360deg);
-    }
-
-    ul li a:before {
-        position: absolute;
-        background: #f00;
-    }
-</style>
-
 </html>
